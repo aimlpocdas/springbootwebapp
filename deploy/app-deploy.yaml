@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-sample-app-deployment
+  namespace: default
   labels:
     app: my-sample-app
 spec:
@@ -16,7 +17,7 @@ spec:
     spec:
       containers:
         - name: my-sample-app
-          image: my-sample-app:latest
+          image: us-central1-docker.pkg.dev/loyal-symbol-436604-a9/konveyor/my-sample-app:latest
           ports:
             - containerPort: 3000
           resources:
