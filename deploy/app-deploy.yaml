@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-sample-app-deployment
-  namespace: default
+  namespace: jioma-argoworkflow-ns
   labels:
     app: my-sample-app
 spec:
